@@ -1,0 +1,6 @@
+common\json\message\MessagePacket.class
+common\json\message\MessageBuilder.class
+common\json\message\AckBuilder.class
+common\json\message\PacketBuilderFectory.class
+common\json\message\AckPacket.class
+chatter\Chatter.class
