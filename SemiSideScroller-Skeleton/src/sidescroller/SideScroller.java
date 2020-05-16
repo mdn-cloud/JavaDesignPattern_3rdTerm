@@ -96,7 +96,7 @@ public class SideScroller extends Application{
 		
 		board.setRowAndCol(Tuple.pair(ROWS, COLS), Tuple.pair(SIZE, SIZE), SCALE); //1.3
 		
-		Animator animator = new Animator();  //1.4
+		Animator animator =  new Animator();  //1.4
 		
 		animator.setCanvas(canvas);  //1.5
 		animator.setMapScene(board); //1.6
