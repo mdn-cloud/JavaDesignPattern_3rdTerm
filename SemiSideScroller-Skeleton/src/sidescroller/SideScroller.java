@@ -75,6 +75,7 @@ public class SideScroller extends Application{
 	 * -----------------------
 	 * </pre>
 	 * 
+	 * 
 	 * this object is passed to {@link Scene} object in {@link Chatter#start(Stage)} method.
 	 */
 	private BorderPane root;
@@ -90,12 +91,13 @@ public class SideScroller extends Application{
 	 */
 	@Override
 	public void init() throws Exception{
-		canvas = new Canvas(width, height);   //1.1
+		canvas = new Canvas(width, height);       //1.1
 	    board = new MapScene();             //1.2
 		
 		board.setRowAndCol(Tuple.pair(ROWS, COLS), Tuple.pair(SIZE, SIZE), SCALE); //1.3
 		
 		Animator animator = new Animator();  //1.4
+		
 		animator.setCanvas(canvas);  //1.5
 		animator.setMapScene(board); //1.6
 		
